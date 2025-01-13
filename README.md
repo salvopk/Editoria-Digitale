@@ -9,8 +9,6 @@ version: 1.0
 bibliography: bibliografia.bib
 ---
 
-![Logo UNIMI](./foto/minerva.jpg){width=100}
-
 # Agire per il Futuro: Guida alla Sostenibilità
 
 - [Link al poster](www.google.com)
@@ -40,9 +38,9 @@ La parte centrale del poster è stata strutturata per accogliere aggiornamenti r
 
 Il principale canale di distribuzione è Instagram, utilizzando storie con adesivi per il download. Il formato scelto è PDF per garantire compatibilità e alta qualità visiva. Il design è orientato verso uno stile informale ma professionale, capace di comunicare efficacemente il messaggio dell'ente.
 
-![Storia Instagram promozionale](.\foto\insta.jpg){height=250}
+![Storia Instagram promozionale](.\foto\insta.jpg)
 &nbsp;
-![Screenshot Poster](.\foto\progetto.jpg){height=250}
+![Screenshot Poster](.\foto\progetto.jpg)
 
 ## Processo di Produzione
 
@@ -58,7 +56,7 @@ Il flusso documentale comprende:
 3. Conversione in LaTeX tramite Pandoc, utilizzando il template "ANT Center Poster".
 4. Controllo e approvazione del layout e dei contenuti.
 
-![Flusso documentale](.\foto\diagramma.jpg){height=250}
+![Flusso documentale](.\foto\diagramma.jpg)
 
 ### Tecnologie adottate
 
