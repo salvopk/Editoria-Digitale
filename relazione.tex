@@ -1,0 +1,367 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Relazione del progetto d'esame di Editoria Digitale},
+  pdfauthor={Salvatore Torrisi matricola 10451A},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Relazione del progetto d'esame di Editoria Digitale}
+\author{Salvatore Torrisi matricola 10451A}
+\date{a.a. 2024/2025}
+
+\begin{document}
+\maketitle
+
+\begin{figure}
+\centering
+\includegraphics[width=1.04167in,height=\textheight,keepaspectratio]{./foto/minerva.jpg}
+\caption{Logo UNIMI}
+\end{figure}
+
+\section{Agire per il Futuro: Guida alla
+Sostenibilità}\label{agire-per-il-futuro-guida-alla-sostenibilituxe0}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://drive.google.com/file/d/17-n4tzHcDFeLUxUBcTL0LJgaEhToXM-U/view?usp=sharing}{Link
+  al poster}
+\item
+  \href{https://github.com/salvopk/Editoria-Digitale/tree/main}{Link
+  alla repository}
+\end{itemize}
+
+\subsection{Introduzione}\label{introduzione}
+
+Il progetto ``Agire per il Futuro: Guida alla Sostenibilità'' è stato
+sviluppato per conto di un ente no-profit che promuove la sostenibilità
+ambientale. L'obiettivo principale è sensibilizzare i giovani di età
+compresa tra i 18 e i 25 anni sui temi del cambiamento climatico e
+dell'impatto ambientale delle scelte quotidiane. Il prodotto editoriale
+ideato è un poster promozionale distribuito tramite le storie Instagram
+dell'ente, con adesivi per il download diretto.
+
+\subsection{Ideazione}\label{ideazione}
+
+\subsubsection{Tema}\label{tema}
+
+Il tema centrale del progetto è il cambiamento climatico e l'importanza
+di comportamenti sostenibili. Sono state approfondite le principali
+problematiche ambientali, come l'aumento delle emissioni di CO2, l'uso
+eccessivo delle risorse naturali e l'inquinamento, evidenziando domande
+frequenti e bisogni insoddisfatti del pubblico giovane. Oltre a ciò,
+l'ente tiene a realizzare delle iniziative per i giovani per combattere
+il cambiamento climatico, e tramite questo progetto editoriale vuole far
+diffondere sempre di più la voce su queste attività.
+
+\subsubsection{Destinatari}\label{destinatari}
+
+Il target è rappresentato da giovani adulti (18-25 anni), digitalmente
+competenti e attivi sui social media. Attraverso la tecnica delle
+personas, è stato immaginato un pubblico interessato a comprendere
+meglio come contribuire alla sostenibilità ambientale. Ad esempio, una
+persona fittizia, Anna, 22 anni, studentessa universitaria di scienze
+ambientali, utilizza spesso Instagram per condividere e scoprire
+contenuti legati alla sostenibilità. Anna cerca suggerimenti pratici su
+come ridurre il proprio impatto ambientale e è interessata a iniziative
+locali sul tema. Un'altra persona, Marco, 24 anni, sviluppatore web, è
+interessato a tecnologie verdi e vuole adottare stili di vita
+sostenibili. Entrambi rappresentano target chiave del progetto e
+riflettono le diverse esigenze del pubblico giovane. e desideroso di
+informazioni pratiche e accessibili.
+
+\subsubsection{Modello di fruizione}\label{modello-di-fruizione}
+
+Il poster è pensato per una fruizione digitale semplice ed efficace,
+tramite un semplice PDF visualizzabile da mobile. Nel poster viene
+utilizzato un linguaggio chiaro e diretto, integrato di immagini per
+catturare l'attenzione.
+
+La parte centrale del poster è stata strutturata per accogliere
+aggiornamenti regolari con notizie e iniziative legate al cambiamento
+climatico.
+
+\subsubsection{Canali di distribuzione}\label{canali-di-distribuzione}
+
+Il principale canale di distribuzione è Instagram, utilizzando storie
+con adesivi per il download. Il formato scelto è PDF per garantire
+compatibilità e alta qualità visiva. Il design è orientato verso uno
+stile informale ma professionale, capace di comunicare efficacemente il
+messaggio dell'ente.
+
+\includegraphics[width=\linewidth,height=2.60417in,keepaspectratio]{./foto/insta.jpg}
+~
+\includegraphics[width=\linewidth,height=2.60417in,keepaspectratio]{./foto/progetto.jpg}
+
+\subsection{Processo di Produzione}\label{processo-di-produzione}
+
+\subsubsection{Acquisizione dei
+contenuti}\label{acquisizione-dei-contenuti}
+
+I contenuti sono stati generati con l'ausilio di ChatGPT, applicando
+tecniche di prompt engineering per ottenere testi scientificamente
+accurati e adatti al target. Per le immagini sono state utilizzate fonti
+libere per minimizzare i costi di acquisizione, ad eccezione della
+locandina di una delle iniziative che è stata generata con DALL-E 3.
+
+\subsubsection{Gestione documentale}\label{gestione-documentale}
+
+Il flusso documentale comprende:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Acquisizione dei contenuti: I contenuti sono stati generati tramite
+  prompt engineering con ChatGPT, combinando testi scientifici e
+  divulgativi. Le immagini sono state ottenute da fonti libere o
+  generate con DALL-E 3 per ridurre i costi e garantire originalità.
+\item
+  Organizzazione e scrittura: Tutti i contenuti sono stati redatti in
+  Markdown, con l'integrazione di metadati YAML per una facile
+  conversione in altri formati.
+\item
+  Conversione e layout: Tramite Pandoc, i file Markdown sono stati
+  trasformati in LaTeX, utilizzando il template ``ANT Center Poster''
+  per la generazione del prodotto finale.
+\item
+  Revisione e controllo qualità: Il poster è stato sottoposto a
+  controlli manuali per verificare coerenza, accuratezza e leggibilità.
+\item
+  Distribuzione: Il file finale è stato salvato in formato PDF e reso
+  disponibile per il download tramite storie Instagram, sfruttando
+  adesivi interattivi per una distribuzione semplice ed efficace.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth,height=2.60417in,keepaspectratio]{./foto/diagramma.jpg}
+\caption{Flusso documentale}
+\end{figure}
+
+\subsubsection{Tecnologie adottate}\label{tecnologie-adottate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Markdown}: Per la creazione e la gestione dei contenuti.
+\item
+  \textbf{Pandoc}: Per la conversione in LaTeX e l'applicazione del
+  template.
+\item
+  \textbf{LaTeX}: Per la generazione del poster.
+\end{itemize}
+
+\subsubsection{Esecuzione del flusso}\label{esecuzione-del-flusso}
+
+Il flusso di produzione è completamente documentato e riproducibile
+attraverso i comandi e le configurazioni forniti. Il comando utilizzato
+per la conversione principale per far sì che venisse integrato il
+template è il seguente:
+
+\begin{verbatim}
+pandoc -s contenuto.md -o output.tex -V documentclass=antposter
+\end{verbatim}
+
+\subsection{Valutazione dei risultati
+raggiunti}\label{valutazione-dei-risultati-raggiunti}
+
+\subsubsection{Valutazione del flusso di
+produzione}\label{valutazione-del-flusso-di-produzione}
+
+Il flusso di produzione ha portato ai seguenti risultati:
+
+\begin{itemize}
+\tightlist
+\item
+  Efficienza migliorata: L'uso di Markdown e Pandoc ha ridotto i tempi
+  di gestione documentale, rendendo il processo più fluido e scalabile.
+\item
+  Minimizzazione degli errori: L'intelligenza artificiale ha garantito
+  contenuti accurati e coerenti, integrando informazioni da fonti
+  affidabili. La revisione manuale ha ulteriormente ridotto il rischio
+  di errori.
+\item
+  Accessibilità e distribuzione: Il formato PDF e la distribuzione
+  tramite social network hanno garantito una vasta accessibilità al
+  target, senza necessità di software specifici.
+\end{itemize}
+
+\subsubsection{Confronto con lo stato
+dell'arte}\label{confronto-con-lo-stato-dellarte}
+
+Rispetto ai metodi tradizionali, l'approccio adottato ha reso il
+processo più efficiente e innovativo, grazie alla flessibilità offerta
+da Markdown e Pandoc. Inoltre, l'approccio digitale riduce
+significativamente i tempi di produzione rispetto ai processi
+tradizionali basati su software complessi o su supporti fisici.
+
+\subsubsection{Limiti emersi}\label{limiti-emersi}
+
+\begin{itemize}
+\tightlist
+\item
+  Difficoltà iniziale nell'adattare il template LaTeX alle esigenze
+  specifiche del progetto.
+\item
+  Limitazioni nella gestione degli spazi e delle configurazioni avanzate
+  del template.
+\end{itemize}
+
+\subsection{Conclusioni}\label{conclusioni}
+
+Il progetto ha raggiunto gli obiettivi prefissati, sensibilizzando il
+target giovane con un prodotto editoriale digitale coinvolgente e
+aggiornabile. I risultati più soddisfacenti riguardano la qualità visiva
+del poster e l'efficacia del flusso di produzione. Tuttavia, rimangono
+margini di miglioramento nella personalizzazione dei template.
+
+\subsection{Bibliografia e sitografia}\label{bibliografia-e-sitografia}
+
+Elenco delle fonti principali: Geographic (2022)
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-essc}
+Data, Earth System Science. 2022a. {``Global Carbon Budget 2022.''}
+\url{https://www.globalcarbonproject.org/}.
+
+\bibitem[\citeproctext]{ref-wwf}
+---------. 2022b. {``Living Planet Report 2022: Building a
+Nature-Positive Society.''}
+\url{https://www.worldwildlife.org/publications/living-planet-report-2022}.
+
+\bibitem[\citeproctext]{ref-pd}
+Drawdown, Project. 2020. {``Drawdown Review 2020: Climate Solutions for
+a New Decade.''} \url{https://drawdown.org/drawdown-review}.
+
+\bibitem[\citeproctext]{ref-eea}
+EEA. 2021. {``Transport and Environment Report 2021: Decarbonising
+Europe's Transport System.''}
+\url{https://www.eea.europa.eu/publications/transport-and-environment-report-2021}.
+
+\bibitem[\citeproctext]{ref-fao}
+FAO. 2021. {``The State of Food and Agriculture 2021: Making Agrifood
+Systems More Resilient to Shocks and Stresses.''}
+\url{https://www.fao.org/3/cb4476en/cb4476en.pdf}.
+
+\bibitem[\citeproctext]{ref-emaf}
+Foundation, Ellen MacArthur. 2016. {``The New Plastics Economy:
+Rethinking the Future of Plastics \& Catalysing Action.''}
+\url{https://ellenmacarthurfoundation.org/}.
+
+\bibitem[\citeproctext]{ref-ng}
+Geographic, National. 2022. {``How to Live More Sustainabl.''}
+\url{https://www.nationalgeographic.com/environment/article/how-to-live-more-sustainably}.
+
+\bibitem[\citeproctext]{ref-antposter}
+Overleaf. 2024. {``ANT Center Poster Template.''}
+\url{https://www.overleaf.com/latex/templates/ant-center-poster/pstbpjsrjspr}.
+
+\bibitem[\citeproctext]{ref-ipcc}
+Press, Cambridge University. 2022. {``Climate Change 2022: Impacts,
+Adaptation, and Vulnerability.''}
+\url{https://www.ipcc.ch/report/ar6/wg2/}.
+
+\bibitem[\citeproctext]{ref-undp}
+UNDP. 2023. {``The Sustainable Development Goals Report 2023.''}
+\url{https://unstats.un.org/sdgs/report/2023/}.
+
+\bibitem[\citeproctext]{ref-unep}
+UNEP. 2018. {``Single-Use Plastics: A Roadmap for Sustainability.''}
+\url{https://www.unep.org/resources/report/single-use-plastics-roadmap-sustainability}.
+
+\end{CSLReferences}
+
+\end{document}
