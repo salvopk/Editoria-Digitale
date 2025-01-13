@@ -38,9 +38,9 @@ La parte centrale del poster è stata strutturata per accogliere aggiornamenti r
 
 Il principale canale di distribuzione è Instagram, utilizzando storie con adesivi per il download. Il formato scelto è PDF per garantire compatibilità e alta qualità visiva. Il design è orientato verso uno stile informale ma professionale, capace di comunicare efficacemente il messaggio dell'ente.
 
-![Storia Instagram promozionale](.\foto\insta.jpg)
+![Storia Instagram promozionale](./foto/insta.jpg)
 &nbsp;
-![Screenshot Poster](.\foto\progetto.jpg)
+![Screenshot Poster](./foto/progetto.jpg)
 
 ## Processo di Produzione
 
@@ -56,7 +56,7 @@ Il flusso documentale comprende:
 3. Conversione in LaTeX tramite Pandoc, utilizzando il template "ANT Center Poster".
 4. Controllo e approvazione del layout e dei contenuti.
 
-![Flusso documentale](.\foto\diagramma.jpg)
+![Flusso documentale](./foto/diagramma.jpg)
 
 ### Tecnologie adottate
 
