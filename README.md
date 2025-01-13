@@ -9,7 +9,7 @@ version: 1.0
 bibliography: bibliografia.bib
 ---
 
-![Logo UNIMI](.\foto\minerva.jpg){width=100}
+![Logo UNIMI](./foto/minerva.jpg){width=100}
 
 # Agire per il Futuro: Guida alla Sostenibilità
 
